@@ -1,15 +1,50 @@
 ---
 layout: post
-title: "A Post with a Video"
-description: "Custom written post descriptions are the way to go... if you're not lazy."
-category: misc
-tags: books, video
+title: "想念伦敦"
+description: ""
+category: 碎碎念
+tags: 碎碎念
 ---
+你在英國呆了十年。
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/2DLnhdnSUVs" frameborder="0" allowfullscreen></iframe></center><br>
+我說最不想去的地方就是英國。
+
+第一次走之前你對我說，你會喜歡那裡的。
+
+我沒有答話。
+
+在這裡，每走過一條街似乎都有你的影子。
 
 
 
-```html
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/2DLnhdnSUVs" frameborder="0" allowfullscreen></iframe></center>
+I been sleepless at night
+
+Cause I don't know how I feel
+
+I been waiting on you
+
+Just to say something real
+
+There's a light on the road and I think you know
+
+Morning has come and I have to go
+
+
+
+今天你問我什麼時候走。
+
+我說週六。
+
+外面下起了小雨。
+
+我開始想念倫敦。
+
+
+
+I see everything true
+
+There's still a fire in my heart
+
+But I'm not burning for you.
+
 ```
