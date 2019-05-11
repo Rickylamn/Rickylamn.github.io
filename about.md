@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-**Hi，我是Ricky!欢迎来的我的网站** 
+**Hi，我是Ricky! 欢迎来的我的网站** 
 
 我总喜欢写一些乱七八糟的文字来记录自己的碎碎念
 
