@@ -56,3 +56,4 @@ permalink: /about/
 15年07月：搬家至乐虎IDC。
 
 15年02月：采用Typecho博客服务搭建，启用Fatfat.tk域名。
+<a class="md_compiled" href="https://bitcron.com">Bitcron</a>
