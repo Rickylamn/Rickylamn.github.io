@@ -39,7 +39,7 @@ permalink: /about/
 
 19年05月：尝试搬家至阿里云服务器，并精简部分页面。
 
-19年03月：使用Github Pages搭建静态博客，可通过Rickylamn.github.io访问。
+19年03月：使用Github Pages搭建静态博客，可通过<a href="https://Rickylamn.github.io/">Rickylamn.github.io</a>访问。
 
 18年09月：启用Rickylam.top域名。
 
@@ -47,13 +47,12 @@ permalink: /about/
 
 17年11月：实现每周网站自动全局备份数据，评论启用disqus。
 
-17年09月：使用Linode虚拟主机搭建博客成功，并实现科学访问。
+17年09月：使用<a href="https://www.linode.com/">Linode</a>虚拟主机搭建博客成功，并实现科学访问。
 
 17年08月：启用Ricky.tk域名。
 
-17年05月：更换博客服务为WordPress，空间到期搬家至淘宝月租空间。
+17年05月：更换博客服务为<a href="https://cn.wordpress.org/">WordPress</a>，空间到期搬家至淘宝月租空间。
 
-15年07月：搬家至乐虎IDC。
+15年07月：搬家至<a href="https://lehuidc.com/">乐虎IDC</a>。
 
-15年02月：采用Typecho博客服务搭建，启用Fatfat.tk域名。
-<a class="md_compiled" href="https://bitcron.com">Bitcron</a>
+15年02月：采用<a href="http://typecho.org/">Typecho</a>博客服务搭建，启用Fatfat.tk域名。
