@@ -22,16 +22,11 @@ layout: main
     <div class="footer center">
            © 2015-2019.  Designed by Ricky , Powered by github.
     </div>
-</div>
-
-<!-- time -->
-  <div id="show-time">
-    <span id="span_dt_dt"></span>
-  </div>
+    <!-- time -->
   <script>
       function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("6/23/2017 19:37:01");
+        BirthDay = new Date("8/1/2017 00:00:00");
         today = new Date();
         //总时间
         timeold = (today.getTime() - BirthDay.getTime());
@@ -49,4 +44,7 @@ layout: main
     }
 show_date_time();
   </script>
+
+</div>
+
 
