@@ -34,16 +34,17 @@ permalink: /about/
 
 <br>
 
-**#重要时间线#**
+**#重要时间线#**  
+
 19年07月：整理文章
 
 19年05月：尝试搬家至阿里云服务器，并精简部分页面。
 
 19年03月：使用Github Pages搭建静态博客，可通过<a href="https://Rickylamn.github.io/">Rickylamn.github.io</a>访问。
 
-18年09月：启用Rickylam.top域名。
+18年09月：启用Rickylam.top域名。  
 
-**这段时间记录丢失...咕咕咕**
+**这段时间记录丢失...咕咕咕**  
 
 17年11月：实现每周网站自动全局备份数据，评论启用disqus。
 
