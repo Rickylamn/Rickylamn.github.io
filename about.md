@@ -26,9 +26,6 @@ permalink: /about/
 
 都是我
 
-
-
-<br>
 这是我的利用 GitHub Pages 搭建的个人博客。
 <br>
 
