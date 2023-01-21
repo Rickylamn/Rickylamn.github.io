@@ -23,10 +23,27 @@ layout: main
            © 2015-2023.  Designed by Ricky , Powered by github.
     </div>
     
-    runtime: '天',
+#测试
+      root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
   date_suffix: {
     just: '刚刚',
     min: '分钟前',
     hour: '小时前',
     day: '天前',
     month: '个月前'
+  },
