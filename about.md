@@ -39,24 +39,24 @@ permalink: /about/
 
 21年05月：更新了about me的页面之后因为种种原因又删除了
 
-19年07月：删除整理部分文章
+19年07月：删除整理部分文章，搬回Github，继续启用静态博客
 
-19年05月：尝试搬家至阿里云服务器，并精简部分页面。
+19年05月：尝试搬家至阿里云服务器，并精简部分页面
 
-19年03月：使用Github Pages搭建静态博客，可通过<a href="https://Rickylamn.github.io/">Rickylamn.github.io</a>访问。
+19年03月：使用Github Pages搭建静态博客，可通过<a href="https://Rickylamn.github.io/">Rickylamn.github.io</a>访问
 
-18年09月：启用Rickylam.top域名，因账号密码导致解析失败【弃用】。  
+18年09月：启用Rickylam.top域名，因账号密码导致解析失败【弃用】
 
 **这段时间记录丢失...咕咕咕**  
 
 17年11月：实现每周网站自动全局备份数据，评论启用disqus。
 
-17年09月：使用<a href="https://www.linode.com/">Linode</a>虚拟主机搭建博客成功，并实现科学访问。
+17年09月：使用<a href="https://www.linode.com/">Linode</a>虚拟主机搭建博客成功，并实现科学访问
 
-17年08月：启用Ricky.tk域名。
+17年08月：启用Ricky.tk域名
 
-17年05月：更换博客服务为<a href="https://cn.wordpress.org/">WordPress</a>，空间到期搬家至淘宝月租空间。
+17年05月：更换博客服务为<a href="https://cn.wordpress.org/">WordPress</a>，空间到期搬家至淘宝月租空间
 
-15年07月：搬家至<a href="https://lehuidc.com/">乐虎IDC</a>。
+15年07月：搬家至<a href="https://lehuidc.com/">乐虎IDC</a>
 
-15年02月：采用<a href="http://typecho.org/">Typecho</a>博客服务搭建，启用Fatfat.tk域名【17年7月已过期】。
+15年02月：采用<a href="http://typecho.org/">Typecho</a>博客服务搭建，启用Fatfat.tk域名【17年7月已过期】
