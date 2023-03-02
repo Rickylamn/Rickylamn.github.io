@@ -34,7 +34,7 @@
 
 19年03月：使用Github Pages搭建静态博客，可通过<a href="https://Rickylamn.github.io/">Rickylamn.github.io</a>访问
 
-18年09月：启用Rickylam.top域名，因账号密码导致解析失败【弃用】
+18年09月：启用Rickylam.top域名，因账号密码忘记导致解析失败【对不起是真的记不起来了】
 
 **这段时间记录丢失...咕咕咕**  
 
