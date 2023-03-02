@@ -48,4 +48,4 @@
 
 15年07月：搬家至<a href="https://lehuidc.com/">乐虎IDC</a>
 
-15年02月：采用<a href="http://typecho.org/">Typecho</a>博客服务搭建，启用Fatfat.tk域名【17年7月已过期】
+15年02月：采用<a href="http://typecho.org/">Typecho</a>博客服务搭建，启用Fatfat.tk域名【17年7月已过期，没续上】
