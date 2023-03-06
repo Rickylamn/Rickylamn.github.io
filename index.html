@@ -1,36 +1,36 @@
 ---
 layout: main
 ---
-
 <div class="home">
-    <div class="logo-header">
-        <img src='/assets/logo.png'>
-        <h1 class="post-title">{{ site.title }}</h1>
-    </div>
+  <div class="logo-header">
+    <img src='/assets/logo.png'>
+    <h1 class="post-title">{{ site.title }}</h1>
+  </div>
 
   <ul class="post-list">
     {% for post in site.posts %}
     <li>
-        <div>
+      <div>
         <a class="post-link" href="{{ site.url }}{{ post.url}}">{{ post.title }}</a>
-            <span class="post-date">{{ post.date | date_to_long_string }}</span>
-        </div>
+        <span class="post-date">{{ post.date | date_to_long_string }}</span>
+      </div>
     </li>
     {% endfor %}
   </ul>
 
-    <div class="footer center">
-           © 2015-2023.  Designed by Ricky , Powered by GitHub Pages + <a href=“https://github.com/kuoa/julia”>Jekyll</a>.
-    </div>
-    
-<!-- 时钟 -->
-<div id="clock"></div>
-<script>
-  function updateClock() {
-    var now = new Date();
-    var clock = document.getElementById("clock");
-    clock.innerHTML = now.toLocaleTimeString();
-    setTimeout(updateClock, 5000); // 每秒钟更新一次
-  }
-  updateClock();
-</script>
+  <div class="footer center">
+    © 2015-2023. Designed by Ricky, Powered by GitHub Pages + <a href=“https://github.com/kuoa/julia”>Jekyll</a>.
+  </div>
+
+  <!-- 时钟 -->
+  <div id="clock" style="color: gray; text-align: center;"></div>
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var clock = document.getElementById("clock");
+      clock.innerHTML = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      setTimeout(updateClock, 5000); // 每秒钟更新一次
+    }
+    updateClock();
+  </script>
+</div>
