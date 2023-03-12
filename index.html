@@ -1,3 +1,6 @@
+---
+layout: main
+---
 <div class="home">
   <div class="logo-header">
     <img src='/assets/logo.png'>
@@ -16,9 +19,10 @@
   </ul>
 
   <div class="footer center">
-    © 2015-2023. Designed by Ricky, Powered by GitHub Pages + <a href="https://github.com/kuoa/julia">Jekyll</a>.</div>
+    © 2015-2023. Designed by Ricky, Powered by GitHub Pages + <a href=“https://github.com/kuoa/julia”>Jekyll</a>.
+  </div>
 
-   <!-- 时钟 -->
+ <!-- 时钟 -->
 <div style="text-align: center; font-size: smaller;">
   <span style="color: gray; font-size: smaller;">现在的时间是:</span>
   <span id="clock" style="color: gray; font-size: smaller;"></span>
@@ -27,11 +31,9 @@
   function updateClock() {
     var now = new Date();
     var clock = document.getElementById("clock");
-    clock.innerHTML = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second:'2-digit' });
-    setTimeout(updateClock, 1000); // 每秒更新一次
+    clock.innerHTML = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    setTimeout(updateClock, 2500); // 每秒更新一次
   }
   updateClock();
 </script>
-<!-- 时钟 -->
-    
-</div>
+   <!-- 时钟 -->
