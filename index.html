@@ -36,13 +36,23 @@ layout: main
   updateClock();
 </script>
 <!-- 时钟 -->
-<!-- IP -->
-<span id="ip"></span>
-<script src="//pv.sohu.com/cityjson?ie=utf-8"></script>
-<script>
-    function returnCitySN(a) {
-        document.getElementById("ip").innerHTML = a.cip + ' (' + a.cname + ')';
-    }
+
+    
+<!-- 添加一句话 -->
+<p class="hito"></p>
+<!-- 显示访问者IP地址 -->
+<p class="getip"></p>
+
+<!-- 导入HitokotoAPI脚本 -->
+<script src="https://v1.hitokoto.cn/?encode=js&select=.hito" defer></script>
+<!-- 获取用户IP地址 -->
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">
+(function getip(selector) {
+  var ip = "你的 IP: " + returnCitySN["cip"];
+  var ele = document.querySelector(selector);
+  Array.isArray(ele) ? (ele[0].innerText = ip) : (ele.innerText = ip);
+})(".getip");
 </script>
-<!-- IP -->
+
   </div>
