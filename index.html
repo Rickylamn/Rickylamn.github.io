@@ -36,5 +36,13 @@ layout: main
   updateClock();
 </script>
 <!-- 时钟 -->
-    
+<!-- IP -->
+<span id="ip"></span>
+<script src="//pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+    function returnCitySN(a) {
+        document.getElementById("ip").innerHTML = a.cip + ' (' + a.cname + ')';
+    }
+</script>
+<!-- IP -->
   </div>
