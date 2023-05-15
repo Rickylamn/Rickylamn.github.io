@@ -36,18 +36,4 @@ layout: main
   updateClock();
 </script>
 <!-- 时钟 -->
-
-<!-- 显示访问者IP地址 -->
-<p class="getip"></p>
-<script src="http://ip-api.com/json/?fields=status,country,regionName,city,lat,lon,query" defer></script>
-<script type="text/javascript">
-(function getip(selector) {
-  var ip = "你的 IP: ";
-  ip += typeof ipapi == 'undefined' ? 'unknown' : ipapi.query;
-  ip += ' (' + (typeof ipapi == 'undefined' ? '' : ipapi.city + ', ' + ipapi.regionName + ', ' + ipapi.country) + ')';
-  var ele = document.querySelector(selector);
-  Array.isArray(ele) ? (ele[0].innerText = ip) : (ele.innerText = ip);
-})(".getip");
-</script>
-
   </div>
