@@ -1,33 +1,3 @@
 <div class="footer center">
-  © 2015-2023. Designed by Ricky, Powered by GitHub Pages + <a href=“https://github.com/kuoa/julia”>Jekyll</a>.
-  <div class="visitor-info">
-    <span><b>Browser:</b></span> <span id="visitor-browser"></span>
-    <span><b>Browser Version:</b></span> <span id="visitor-browser-version"></span>
-    <span><b>System:</b></span> <span id="visitor-system"></span>
-    <span><b>IP:</b></span> <span id="visitor-ip"></span>
-    <span><b>Time:</b></span> <span id="visitor-time"></span>
-  </div>
+  © 2015-2023. Designed by Ricky, Powered by GitHub Pages + <a href=“https://github.com/kuoa/julia”>Jekyll</a>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-  setInterval(function(){
-    $.ajax({
-      url: 'api.php',
-      type: 'GET',
-      dataType: 'json',
-      success: function(data) {
-        $('#visitor-browser').text(data.browser);
-        $('#visitor-browser-version').text(data.browser_ver);
-        $('#visitor-system').text(data.system);
-        $('#visitor-ip').text(data.ip);
-        $('#visitor-time').text(data.time);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        console.log('Error: ' + textStatus + ' - ' + errorThrown);
-      }
-    });
-  }, 5000); //每5秒获取一次最新访客数据
-});
-</script>
