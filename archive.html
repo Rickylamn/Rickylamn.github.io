@@ -4,19 +4,22 @@ title: Archive
 subtitle: Do something you like.
 permalink: /archive/
 ---
+<!-- 1 -->
 
 <div class="home">
+    <!-- 识别每个分类并为其生成标题和链接标记列表 -->
 	{% for category in site.categories %}
-	{% capture cat %}{{ category | first }}{% endcapture %}
-
+    {% capture cat %}{{ category | first }}{% endcapture %}
+    <!-- 使用大写首字母进行标题化 -->
 	<h2>{{ cat | capitalize }}</h2>
+        <!-- 为该分类下的每篇文章生成一个包含标题、日期和标签的链接列表 -->
 		<ul class="post-list">
 		{% for post in site.categories[cat] %}
 		  <li>
 		  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			 <span class="post-date">{{ post.date | date_to_long_string }}</span>
 		  </li>
-
+            <!-- 如果文章有标签，为每个标签生成一个链接，显示在文章列表下方 -->
 			{% if post.tags %}
 			<div class="post-tags">
 				{% for tag in post.tags %}
@@ -24,23 +27,26 @@ permalink: /archive/
 				{% endfor %}
 			</div>
 			{% endif %}
-
 		{% endfor %}
-
 		</ul>
-
 	{% endfor %}
 </div>
 
 <p><strong>“带你见我的家人” “然后你也变成我的家人”</strong></p>
 <div>
     <style>
+    <!-- 为一个指定类添加样式 -->
         .ny i {
             color: #FF4500;
         }
     </style>
     <div class="ny" style="margin-bottom:30px">
         <div style="font-size:30px;text-align:center">
+        <!-- 创建一个包含倒计时时长的DOM元素
+        设定正式时间点为2023年05月14日00:00:00
+        使用当前时间与正式时间点之差来计算还剩下多少天、小时、分钟、秒钟
+        将这些值插入到指定的DOM元素中 -->
+
             <i class="ic i-cjdl"></i>
             <span id="t_d"></span>
             <span id="t_h"></span>
@@ -50,19 +56,11 @@ permalink: /archive/
         </div>
     </div>
     <script type="text/javascript">
-        function getRTime() {
-            var e = new Date("2023/05/14 00:00:00"),
-                t = new Date,
-                n = e.getTime() - t.getTime(),
-                m = Math.floor(n / 1e3 / 60 / 60 / 24),
-                o = Math.floor(n / 1e3 / 60 / 60 % 24),
-                r = Math.floor(n / 1e3 / 60 % 60),
-                d = Math.floor(n / 1e3 % 60);
-            document.getElementById("t_d").innerHTML = m + " 天";
-            document.getElementById("t_h").innerHTML = o + " 小时";
-            document.getElementById("t_m").innerHTML = r + " 分";
-            document.getElementById("t_s").innerHTML = d + " 秒";
-        }
+        <!-- 定义获取倒计时剩余时间的函数
+        将正式时间点和当前时间转化为毫秒数，计算两者之差
+        将毫秒数转化为天数、小时数、分钟数和秒数
+        将计算得到的值插入到指定的DOM元素中
+        定时器每隔1秒钟调用一次获取倒计时剩余时间的函数 -->
         setInterval(getRTime, 1e3);
     </script>
 </div>
