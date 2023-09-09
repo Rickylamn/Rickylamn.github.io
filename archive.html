@@ -5,34 +5,32 @@ subtitle: Do something you like.
 permalink: /archive/
 ---
 
-<main class="home">
-	{% capture first_category %}{{ site.categories | first | first }}{% endcapture %}
+<div class="home">
+	{% for category in site.categories %}
+	{% capture cat %}{{ category | first }}{% endcapture %}
 
-	{% for category, posts in site.categories %}
-		{% if category == first_category %}
-			<h2>{{ category | capitalize }}</h2>
-		{% else %}
-			<h2>{{ category }}</h2>
-		{% endif %}
-
+	<h2>{{ cat | capitalize }}</h2>
 		<ul class="post-list">
-			{% for post in posts %}
-				<li>
-					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-					<span class="post-date">{{ post.date | date_to_long_string }}</span>
+		{% for post in site.categories[cat] %}
+		  <li>
+		  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			 <span class="post-date">{{ post.date | date_to_long_string }}</span>
+		  </li>
 
-					{% if post.tags %}
-						<div class="post-tags">
-							{% for tag in post.tags %}
-								<span class="post-tag">#{{ tag }}</span>
-							{% endfor %}
-						</div>
-					{% endif %}
-				</li>
-			{% endfor %}
+			{% if post.tags %}
+			<div class="post-tags">
+				{% for tag in post.tags %}
+				<span class="post-tag">#{{ tag }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+
+		{% endfor %}
+
 		</ul>
+
 	{% endfor %}
-</main>
+</div>
 
 <p><strong>“带你见我的家人” “然后你也变成我的家人”</strong></p>
 
@@ -56,4 +54,3 @@ permalink: /archive/
 	}
 
 	setInterval(getRTime, 1000);
-</script>
