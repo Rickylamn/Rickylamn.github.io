@@ -33,24 +33,36 @@ permalink: /archive/
 </div>
 
 <p><strong>“带你见我的家人” “然后你也变成我的家人”</strong></p>
-
-<div class="countdown">
-	<span id="countdown"></span>
+<div>
+    <style>
+        .ny i {
+            color: #FF4500;
+        }
+    </style>
+    <div class="ny" style="margin-bottom:30px">
+        <div style="font-size:30px;text-align:center">
+            <i class="ic i-cjdl"></i>
+            <span id="t_d"></span>
+            <span id="t_h"></span>
+            <span id="t_m"></span>
+            <span id="t_s"></span>
+            <i class="ic i-cjdl"></i>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function getRTime() {
+            var e = new Date("2023/05/14 00:00:00"),
+                t = new Date,
+                n = e.getTime() - t.getTime(),
+                m = Math.floor(n / 1e3 / 60 / 60 / 24),
+                o = Math.floor(n / 1e3 / 60 / 60 % 24),
+                r = Math.floor(n / 1e3 / 60 % 60),
+                d = Math.floor(n / 1e3 % 60);
+            document.getElementById("t_d").innerHTML = m + " 天";
+            document.getElementById("t_h").innerHTML = o + " 小时";
+            document.getElementById("t_m").innerHTML = r + " 分";
+            document.getElementById("t_s").innerHTML = d + " 秒";
+        }
+        setInterval(getRTime, 1e3);
+    </script>
 </div>
-
-<script type="text/javascript">
-	function getRTime() {
-		var countdownElement = document.getElementById("countdown");
-		var endDate = new Date("2023/05/14 00:00:00");
-		var currentDate = new Date();
-
-		var remainingTime = endDate.getTime() - currentDate.getTime();
-		var days = Math.floor(remainingTime / 1000 / 60 / 60 / 24);
-		var hours = Math.floor(remainingTime / 1000 / 60 / 60 % 24);
-		var minutes = Math.floor(remainingTime / 1000 / 60 % 60);
-		var seconds = Math.floor(remainingTime / 1000 % 60);
-
-		countdownElement.innerHTML = days + " 天 " + hours + " 小时 " + minutes + " 分 " + seconds + " 秒";
-	}
-
-	setInterval(getRTime, 1000);
