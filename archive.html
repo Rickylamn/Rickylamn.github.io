@@ -1,29 +1,26 @@
----
-layout: page
-title: Archive
-subtitle: Do something you like.
-permalink: /archive/
----
-
 <main class="home">
+	<!-- 首先获取第一个分类的名称并赋值给变量 first_category -->
 	{% capture first_category %}{{ site.categories | first | first }}{% endcapture %}
 
 	{% for category, posts in site.categories %}
 		{% if category == first_category %}
-			<h2>{{ category | capitalize }}</h2>
+			<h2>{{ category | capitalize }}</h2> <!-- 如果当前分类与第一个分类名称相同，将首字母大写后输出 -->
 		{% else %}
-			<h2>{{ category }}</h2>
+			<h2>{{ category }}</h2> <!-- 如果当前分类与第一个分类名称不相同，则直接输出分类名称 -->
 		{% endif %}
 
 		<ul class="post-list">
 			{% for post in posts %}
 				<li>
+					<!-- 输出文章的链接和标题 -->
 					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					<!-- 输出文章的日期 -->
 					<span class="post-date">{{ post.date | date_to_long_string }}</span>
 
-					{% if post.tags %}
+					{% if post.tags %} <!-- 判断文章是否有标签 -->
 						<div class="post-tags">
-							{% for tag in post.tags %}
+							{% for tag in post.tags %} <!-- 遍历文章的标签 -->
+								<!-- 输出每个标签前面加上 # 的格式 -->
 								<span class="post-tag">#{{ tag }}</span>
 							{% endfor %}
 						</div>
@@ -42,18 +39,28 @@ permalink: /archive/
 
 <script type="text/javascript">
 	function getRTime() {
+		// 获取倒计时元素
 		var countdownElement = document.getElementById("countdown");
+		// 设置倒计时结束时间
 		var endDate = new Date("2023/05/14 00:00:00");
+		// 获取当前时间
 		var currentDate = new Date();
 
+		// 计算剩余时间
 		var remainingTime = endDate.getTime() - currentDate.getTime();
+		// 计算剩余天数
 		var days = Math.floor(remainingTime / 1000 / 60 / 60 / 24);
+		// 计算剩余小时数
 		var hours = Math.floor(remainingTime / 1000 / 60 / 60 % 24);
+		// 计算剩余分钟数
 		var minutes = Math.floor(remainingTime / 1000 / 60 % 60);
+		// 计算剩余秒数
 		var seconds = Math.floor(remainingTime / 1000 % 60);
 
+		// 在倒计时元素中显示剩余时间
 		countdownElement.innerHTML = days + " 天 " + hours + " 小时 " + minutes + " 分 " + seconds + " 秒";
 	}
 
+	// 每隔1秒调用一次 getRTime 函数更新倒计时
 	setInterval(getRTime, 1000);
 </script>
