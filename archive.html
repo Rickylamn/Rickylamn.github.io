@@ -42,10 +42,7 @@ permalink: /archive/
     </style>
     <div class="ny" style="margin-bottom:30px">
         <div style="font-size:30px;text-align:center">
-        <!-- 创建一个包含倒计时时长的DOM元素
-        设定正式时间点为2023年05月14日00:00:00
-        使用当前时间与正式时间点之差来计算还剩下多少天、小时、分钟、秒钟
-        将这些值插入到指定的DOM元素中 -->
+
 
             <i class="ic i-cjdl"></i>
             <span id="t_d"></span>
@@ -56,11 +53,10 @@ permalink: /archive/
         </div>
     </div>
     <script type="text/javascript">
-        <!-- 定义获取倒计时剩余时间的函数
-        将正式时间点和当前时间转化为毫秒数，计算两者之差
-        将毫秒数转化为天数、小时数、分钟数和秒数
-        将计算得到的值插入到指定的DOM元素中
-        定时器每隔1秒钟调用一次获取倒计时剩余时间的函数 -->
+	 <!-- 创建一个包含倒计时时长的DOM元素
+        设定正式时间点为2023年05月14日00:00:00
+        使用当前时间与正式时间点之差来计算还剩下多少天、小时、分钟、秒钟
+        将这些值插入到指定的DOM元素中 -->
         setInterval(getRTime, 1e3);
     </script>
 </div>
