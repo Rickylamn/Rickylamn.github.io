@@ -31,32 +31,20 @@ permalink: /archive/
 		</ul>
 	{% endfor %}
 </div>
-
 <p><strong>“带你见我的家人” “然后你也变成我的家人”</strong></p>
 <div>
-    <style>
-    <!-- 为一个指定类添加样式 -->
-        .ny i {
-            color: #FF4500;
-        }
-    </style>
-    <div class="ny" style="margin-bottom:30px">
-        <div style="font-size:30px;text-align:center">
-
-
-            <i class="ic i-cjdl"></i>
-            <span id="t_d"></span>
-            <span id="t_h"></span>
-            <span id="t_m"></span>
-            <span id="t_s"></span>
-            <i class="ic i-cjdl"></i>
-        </div>
-    </div>
-    <script type="text/javascript">
-	 <!-- 创建一个包含倒计时时长的DOM元素
-        设定正式时间点为2023年05月14日00:00:00
-        使用当前时间与正式时间点之差来计算还剩下多少天、小时、分钟、秒钟
-        将这些值插入到指定的DOM元素中 -->
-        setInterval(getRTime, 1e3);
-    </script>
-</div>
+	<style>
+		.ny i{color:#FF4500}
+	</style>
+	<div class="ny" style="margin-bottom:30px">
+		<div style="font-size:30px;text-align:center">
+			<i class="ic i-cjdl"></i> 
+			<span id="t_d"></span> 
+			<span id="t_h"></span> 
+			<span id="t_m"></span> 
+			<span id="t_s"></span> 
+			<i class="ic i-cjdl"></i>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function getRTime(){var e=new Date("2023/05/14 00:00:00"),t=new Date,n=e.getTime()-t.getTime(),m=Math.floor(n/1e3/60/60/24),o=Math.floor(n/1e3/60/60%24),r=Math.floor(n/1e3/60%60),d=Math.floor(n/1e3%60);document.getElementById("t_d").innerHTML=m+" 天",document.getElementById("t_h").innerHTML=o+" 小时",document.getElementById("t_m").innerHTML=r+" 分",document.getElementById("t_s").innerHTML=d+" 秒"}setInterval(getRTime,1e3)</script></div>
